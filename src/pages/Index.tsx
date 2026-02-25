@@ -17,7 +17,7 @@ const Index = () => {
           <Hero />
           <About />
           <TechStack />
-          <Projects />
+          {/* hide for now <Projects /> */}
           <Websites />
           <Contact />
         </main>

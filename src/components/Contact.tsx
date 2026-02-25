@@ -1,15 +1,33 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Github, Linkedin, Mail } from "lucide-react";
-import { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
+import HCaptcha from '@hcaptcha/react-hcaptcha';
+import { useRef, useState } from 'react';
+
 
 const Contact = () => {
   const { t } = useLanguage();
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [state, handleSubmit] = useForm("xnjblrvy");
+  const captchaRef = useRef<HCaptcha>(null);
+  const [captchaToken, setCaptchaToken] = useState<string>("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleCaptchaVerify = (token: string) => {
+    setCaptchaToken(token);
+  };
+
+  const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // placeholder
-    console.log("Form submitted:", form);
+    if (!captchaToken) {
+      alert("Please complete the captcha");
+      return;
+    }
+    const formData = new FormData(e.currentTarget);
+    formData.append("h-captcha-response", captchaToken);
+    await handleSubmit(formData as any);
+    setCaptchaToken("");
+    if (captchaRef.current) {
+      captchaRef.current.resetCaptcha();
+    }
   };
 
   return (
@@ -18,48 +36,83 @@ const Contact = () => {
         <h2 className="font-mono text-2xl sm:text-3xl font-bold text-foreground mb-8">
           {t.contact.title}
         </h2>
-        <form onSubmit={handleSubmit} className="space-y-4 mb-8">
+        {state.succeeded && (
+          <p className="mb-4 text-sm font-sans text-foreground">
+            Thank you! Your message has been sent.
+          </p>
+        )}
+        <form onSubmit={handleFormSubmit} className="space-y-4 mb-8">
           <div>
-            <label className="block font-mono text-xs text-muted-foreground mb-1.5">
+            <label htmlFor="name" className="block font-mono text-xs text-muted-foreground mb-1.5">
               {t.contact.nameLabel}
             </label>
             <input
+              id="name"
+              name="name"
               type="text"
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
               placeholder={t.contact.namePlaceholder}
+              required
               className="w-full px-3 py-2 text-sm font-sans bg-background border rounded focus:outline-none focus:ring-1 focus:ring-ring text-foreground placeholder:text-muted-foreground"
+            />
+            <ValidationError
+              prefix="Name"
+              field="name"
+              errors={state.errors}
+              className="mt-1 text-xs text-destructive"
             />
           </div>
           <div>
-            <label className="block font-mono text-xs text-muted-foreground mb-1.5">
+            <label htmlFor="email" className="block font-mono text-xs text-muted-foreground mb-1.5">
               {t.contact.emailLabel}
             </label>
             <input
+              id="email"
+              name="email"
               type="email"
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
               placeholder={t.contact.emailPlaceholder}
+              required
               className="w-full px-3 py-2 text-sm font-sans bg-background border rounded focus:outline-none focus:ring-1 focus:ring-ring text-foreground placeholder:text-muted-foreground"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+              className="mt-1 text-xs text-destructive"
             />
           </div>
           <div>
-            <label className="block font-mono text-xs text-muted-foreground mb-1.5">
+            <label htmlFor="message" className="block font-mono text-xs text-muted-foreground mb-1.5">
               {t.contact.messageLabel}
             </label>
             <textarea
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              id="message"
+              name="message"
               placeholder={t.contact.messagePlaceholder}
               rows={5}
+              required
               className="w-full px-3 py-2 text-sm font-sans bg-background border rounded focus:outline-none focus:ring-1 focus:ring-ring text-foreground placeholder:text-muted-foreground resize-none"
+            />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+              className="mt-1 text-xs text-destructive"
+            />
+          </div>
+          <div className="flex justify-center py-2">
+            <HCaptcha
+              ref={captchaRef}
+              sitekey="b87a96d2-1630-40ce-8870-1846cee85200"
+              onVerify={handleCaptchaVerify}
+              theme="dark"
             />
           </div>
           <button
             type="submit"
-            className="w-full px-6 py-2.5 bg-primary text-primary-foreground font-mono text-sm rounded border border-primary hover:opacity-90 transition-opacity"
+            disabled={state.submitting || !captchaToken}
+            className="w-full px-6 py-2.5 bg-primary text-primary-foreground font-mono text-sm rounded border border-primary hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {t.contact.send}
+            {state.submitting ? "Sending..." : t.contact.send}
           </button>
         </form>
 

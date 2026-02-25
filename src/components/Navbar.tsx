@@ -28,7 +28,7 @@ const Navbar = () => {
           {[
             { id: "about", label: t.nav.about },
             { id: "tech-stack", label: t.nav.techStack },
-            { id: "projects", label: t.nav.projects },
+           // { id: "projects", label: t.nav.projects },
             { id: "websites", label: t.nav.websites },
             { id: "contact", label: t.nav.contact },
           ].map((item) => (

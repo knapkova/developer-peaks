@@ -10,6 +10,9 @@ const Websites = () => {
         <h2 className="font-mono text-2xl sm:text-3xl font-bold text-foreground mb-12">
           {t.websites.title}
         </h2>
+        <p className="text-sm text-muted-foreground font-sans mb-6 italic">
+          {t.websites.note}
+        </p>
         <div className="space-y-4">
           {t.websites.items.map((site, i) => (
             <div
@@ -32,10 +35,13 @@ const Websites = () => {
                 </div>
               </div>
               <a
-                href="#"
-                className="flex items-center gap-1.5 font-mono text-xs text-primary hover:opacity-80 transition-opacity shrink-0"
+                href={site.link || undefined}
+                target={site.link ? "_blank" : undefined}
+                rel={site.link ? "noopener noreferrer" : undefined}
+                aria-disabled={!site.link}
+                className="flex items-center gap-1.5 font-mono text-xs text-primary hover:opacity-80 transition-opacity shrink-0 disabled:pointer-events-none disabled:opacity-50"
               >
-                <ExternalLink size={14} /> {t.websites.visitSite}
+                <ExternalLink size={14} /> {site.link ? t.websites.visitSite : "Link coming soon"}
               </a>
             </div>
           ))}

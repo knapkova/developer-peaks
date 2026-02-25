@@ -10,10 +10,11 @@ export const translations = {
       contact: "Contact",
     },
     hero: {
-      name: "John Developer",
+      name: "Tereza Knápková",
       subtitle: "Full-Stack Developer",
       description: "Building clean, performant web applications with modern tools.",
       viewProjects: "View Projects",
+      viewWebsites: "View Websites",
       contactMe: "Contact Me",
       techLine: "React · Node.js · TypeScript · PostgreSQL",
     },
@@ -48,21 +49,43 @@ export const translations = {
     websites: {
       title: "// websites",
       visitSite: "Visit Site",
+      note: "Note: These websites are currently under development and not live yet — this is a draft.",
       items: [
         {
-          name: "TechStartup.io",
-          role: "Lead developer — built the full platform from scratch including payment integration.",
-          tech: ["Next.js", "Stripe", "Supabase"],
+          name: "Den Gul Café",
+          role: "Café website — designed and developed a responsive site.",
+          tech: ["Next.js", "Vercel", "Supabase", "React"],
+          link: "https://knapkova.github.io/dengulecafe/"
         },
         {
-          name: "LocalCafe.cz",
-          role: "Freelance — designed and developed a responsive website with online ordering.",
-          tech: ["React", "Node.js", "MongoDB"],
+          name: "Caffé Vespa",
+          role: "Café website — designed and developed a responsive site.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/caff-vespa-digital-clipboard/"
         },
         {
-          name: "MountainGuide.dk",
-          role: "Co-developer — hiking route planner with interactive maps and weather data.",
-          tech: ["Vue.js", "Mapbox", "Python"],
+          name: "Kavárna Maty",
+          role: "Café website — designed and developed a responsive site.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/cafe-bar-maty/"
+        },
+        {
+          name: "Onkel A",
+          role: "Café website — designed and developed a responsive site.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/onkel-a-hygge-hub"
+        },
+        {
+          name: "The fresh barber Aarhus",
+          role: "barbershop website — designed and developed a responsive site.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/the-fresh-barber-aarhus/"
+        },
+        {
+          name: "Momo café Silkeborg",
+          role: "Café website — designed and developed a responsive site.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/momo-caffe-silkeborg/"
         },
       ],
     },
@@ -95,10 +118,11 @@ export const translations = {
       contact: "Kontakt",
     },
     hero: {
-      name: "John Developer",
+      name: "Tereza Knápková",
       subtitle: "Full-Stack Vývojář",
       description: "Tvořím čistá, výkonná webová řešení s moderními nástroji.",
       viewProjects: "Zobrazit projekty",
+      viewWebsites: "Zobrazit weby",
       contactMe: "Kontaktujte mě",
       techLine: "React · Node.js · TypeScript · PostgreSQL",
     },
@@ -133,21 +157,43 @@ export const translations = {
     websites: {
       title: "// weby",
       visitSite: "Navštívit web",
+      note: "Poznámka: Tyto weby jsou aktuálně ve vývoji a nejsou zatím live — jedná se o draft.",
       items: [
         {
-          name: "TechStartup.io",
-          role: "Hlavní vývojář — postavil celou platformu od nuly včetně platební integrace.",
-          tech: ["Next.js", "Stripe", "Supabase"],
+          name: "Den Gul Café",
+          role: "Web pro kavárnu — navrhla a vytvořila responzivní web.",
+          tech: ["Next.js", "Vercel", "Supabase", "React"],
+          link: "https://knapkova.github.io/dengulecafe/"
         },
         {
-          name: "LocalCafe.cz",
-          role: "Freelance — navrhl a vyvinul responzivní web s online objednávkami.",
-          tech: ["React", "Node.js", "MongoDB"],
+          name: "Caffé Vespa",
+          role: "Web pro kavárnu — navrhl  a vytvořil  responzivní web.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/caff-vespa-digital-clipboard/"
         },
         {
-          name: "MountainGuide.dk",
-          role: "Spoluvývojář — plánovač turistických tras s interaktivními mapami a počasím.",
-          tech: ["Vue.js", "Mapbox", "Python"],
+          name: "Kavárna Maty",
+          role: "Web pro kavárnu — navrhla a vytvořila responzivní web.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/cafe-bar-maty/"
+        },
+        {
+          name: "Onkel A",
+          role: "Web pro kavárnu — navrhl a vytvořil responzivní web.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/onkel-a-hygge-hub"
+        },
+        {
+          name: "The fresh barber Aarhus",
+          role: "Web pro holičství — navrhla a vytvořila responzivní web.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/the-fresh-barber-aarhus/"
+        },
+        {
+          name: "Momo café Silkeborg",
+          role: "Web pro kavárnu — navrhla a vytvořila responzivní web.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/momo-caffe-silkeborg/"
         },
       ],
     },
@@ -180,10 +226,11 @@ export const translations = {
       contact: "Kontakt",
     },
     hero: {
-      name: "John Developer",
+      name: "Tereza Knápková",
       subtitle: "Full-Stack Udvikler",
       description: "Jeg bygger rene, performante webapplikationer med moderne værktøjer.",
       viewProjects: "Se projekter",
+      viewWebsites: "Se hjemmesider",
       contactMe: "Kontakt mig",
       techLine: "React · Node.js · TypeScript · PostgreSQL",
     },
@@ -218,21 +265,43 @@ export const translations = {
     websites: {
       title: "// websites",
       visitSite: "Besøg side",
+      note: "Bemærk: Disse hjemmesider er i øjeblikket under udvikling og er ikke live endnu — dette er et udkast.",
       items: [
         {
-          name: "TechStartup.io",
-          role: "Hovedudvikler — byggede hele platformen fra bunden inklusive betalingsintegration.",
-          tech: ["Next.js", "Stripe", "Supabase"],
+          name: "Den Gul Café",
+          role: "Web for café — designet og udviklet en responsiv side.",
+          tech: ["Next.js", "Vercel", "Supabase", "React"],
+          link: "https://knapkova.github.io/dengulecafe/"
         },
         {
-          name: "LocalCafe.cz",
-          role: "Freelance — designede og udviklede en responsiv hjemmeside med online bestilling.",
-          tech: ["React", "Node.js", "MongoDB"],
+          name: "Caffé Vespa",
+          role: "Web for café — designet og udviklet en responsiv side.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/caff-vespa-digital-clipboard/"
         },
         {
-          name: "MountainGuide.dk",
-          role: "Medudvikler — vandreruteplanlægger med interaktive kort og vejrdata.",
-          tech: ["Vue.js", "Mapbox", "Python"],
+          name: "Kavárna Maty",
+          role: "Web for café — designet og udviklet en responsiv side.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/cafe-bar-maty/"
+        },
+        {
+          name: "Onkel A",
+          role: "Web for café — designet og udviklet en responsiv side.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/onkel-a-hygge-hub"
+        },
+        {
+          name: "The fresh barber Aarhus",
+          role: "Web for barber — designet og udviklet en responsiv side.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/the-fresh-barber-aarhus/"
+        },
+        {
+          name: "Momo café Silkeborg",
+          role: "Web for café — designet og udviklet en responsiv side.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/momo-caffe-silkeborg/"
         },
       ],
     },
