@@ -1,18 +1,27 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const techData = {
-  frontend: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Vue.js", "HTML/CSS"],
-  backend: ["Node.js", "Express", "PostgreSQL", "Redis", "Go", "Python"],
-  tools: ["Docker", "Git", "GitHub Actions", "Vercel", "Figma", "Linux"],
+  languages: ["Python", "C#", "C", "C++", "SQL", "TypeScript", "Java"],
+  frameworks: [".NET", "Entity Framework Core", "React", "Svelte", "Ionic"],
+  dataAutomation: [
+    "Machine Learning",
+    "REST APIs",
+    "Power Automate",
+    "Power Apps",
+    "Power BI",
+    "KNIME",
+    "Git",
+    "GitHub Actions",
+  ],
 };
 
 const TechStack = () => {
   const { t } = useLanguage();
 
   const categories = [
-    { key: "frontend" as const, label: t.techStack.frontend },
-    { key: "backend" as const, label: t.techStack.backend },
-    { key: "tools" as const, label: t.techStack.tools },
+    { key: "languages" as const, label: t.techStack.languages },
+    { key: "frameworks" as const, label: t.techStack.frameworks },
+    { key: "dataAutomation" as const, label: t.techStack.dataAutomation },
   ];
 
   return (

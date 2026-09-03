@@ -16,13 +16,13 @@ export const translations = {
       viewProjects: "View Projects",
       viewWebsites: "View Websites",
       contactMe: "Contact Me",
-      techLine: "React · Node.js · TypeScript · PostgreSQL",
+      techLine: "Python · C# · .NET · Machine Learning",
     },
     techStack: {
       title: "// tech_stack",
-      frontend: "Frontend",
-      backend: "Backend",
-      tools: "Tools",
+      languages: "Languages",
+      frameworks: "Frameworks",
+      dataAutomation: "Data & Automation",
     },
     projects: {
       title: "// projects",
@@ -49,8 +49,20 @@ export const translations = {
     websites: {
       title: "// websites",
       visitSite: "Visit Site",
-      note: "Note: These websites are currently under development and not live yet — this is a draft.",
+      note: "Note: Some of these websites are still under development.",
       items: [
+        {
+          name: "Magpie Lane Vintage",
+          role: "Vintage shop website — designed and developed a responsive site.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://magpielanevintage.dk"
+        },
+        {
+          name: "BORIX Logistics",
+          role: "Logistics website — designed and developed a responsive site.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/BORIX-logistics/"
+        },
         {
           name: "Den Gul Café",
           role: "Café website — designed and developed a responsive site.",
@@ -76,12 +88,6 @@ export const translations = {
           link: "https://knapkova.github.io/onkel-a-hygge-hub"
         },
         {
-          name: "The fresh barber Aarhus",
-          role: "barbershop website — designed and developed a responsive site.",
-          tech: ["Next.js", "Vercel", "React"],
-          link: "https://knapkova.github.io/the-fresh-barber-aarhus/"
-        },
-        {
           name: "Momo café Silkeborg",
           role: "Café website — designed and developed a responsive site.",
           tech: ["Next.js", "Vercel", "React"],
@@ -91,7 +97,7 @@ export const translations = {
     },
     about: {
       title: "// about_me",
-      bio: "I'm a full-stack developer with a passion for clean code and mountain trails. I build web applications that are fast, accessible, and maintainable. When I'm not coding, you'll find me hiking somewhere in the Alps or experimenting with new tech over a cup of strong coffee.",
+      bio: "I'm a full-stack developer with a passion for clean code, mountains, and staying active. I build web applications that are fast, accessible, and maintainable. When I'm not coding, you might find me teaching a yoga class, cycling, or learning about whatever has caught my interest lately.",
       terminalQuote: '> "Any fool can write code that a computer can understand. Good programmers write code that humans can understand." — Martin Fowler',
     },
     contact: {
@@ -124,13 +130,13 @@ export const translations = {
       viewProjects: "Zobrazit projekty",
       viewWebsites: "Zobrazit weby",
       contactMe: "Kontaktujte mě",
-      techLine: "React · Node.js · TypeScript · PostgreSQL",
+      techLine: "Python · C# · .NET · Machine Learning",
     },
     techStack: {
       title: "// technologie",
-      frontend: "Frontend",
-      backend: "Backend",
-      tools: "Nástroje",
+      languages: "Jazyky",
+      frameworks: "Frameworky",
+      dataAutomation: "Data a automatizace",
     },
     projects: {
       title: "// projekty",
@@ -157,8 +163,20 @@ export const translations = {
     websites: {
       title: "// weby",
       visitSite: "Navštívit web",
-      note: "Poznámka: Tyto weby jsou aktuálně ve vývoji a nejsou zatím live — jedná se o draft.",
+      note: "Poznámka: Některé z těchto webů jsou stále ve vývoji.",
       items: [
+        {
+          name: "Magpie Lane Vintage",
+          role: "Web vintage obchodu — návrh a vývoj responzivního webu.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://magpielanevintage.dk"
+        },
+        {
+          name: "BORIX Logistics",
+          role: "Web logistické společnosti — návrh a vývoj responzivního webu.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/BORIX-logistics/"
+        },
         {
           name: "Den Gul Café",
           role: "Web pro kavárnu — navrhla a vytvořila responzivní web.",
@@ -184,12 +202,6 @@ export const translations = {
           link: "https://knapkova.github.io/onkel-a-hygge-hub"
         },
         {
-          name: "The fresh barber Aarhus",
-          role: "Web pro holičství — navrhla a vytvořila responzivní web.",
-          tech: ["Next.js", "Vercel", "React"],
-          link: "https://knapkova.github.io/the-fresh-barber-aarhus/"
-        },
-        {
           name: "Momo café Silkeborg",
           role: "Web pro kavárnu — navrhla a vytvořila responzivní web.",
           tech: ["Next.js", "Vercel", "React"],
@@ -199,7 +211,7 @@ export const translations = {
     },
     about: {
       title: "// o_mně",
-      bio: "Jsem full-stack vývojář s vášní pro čistý kód a horské stezky. Tvořím webové aplikace, které jsou rychlé, přístupné a udržovatelné. Když zrovna nekóduji, najdete mě na túře někde v Alpách nebo experimentuji s novými technologiemi u šálku silné kávy.",
+      bio: "Jsem full-stack vývojářka s vášní pro čistý kód, hory a aktivní život. Tvořím webové aplikace, které jsou rychlé, přístupné a udržovatelné. Když zrovna nekóduji, možná mě najdete při výuce jógy, na kole nebo při učení se něčemu, co mě právě zaujalo.",
       terminalQuote: '> "Každý hlupák dokáže napsat kód, kterému rozumí počítač. Dobří programátoři píší kód, kterému rozumí lidé." — Martin Fowler',
     },
     contact: {
@@ -232,13 +244,13 @@ export const translations = {
       viewProjects: "Se projekter",
       viewWebsites: "Se hjemmesider",
       contactMe: "Kontakt mig",
-      techLine: "React · Node.js · TypeScript · PostgreSQL",
+      techLine: "Python · C# · .NET · Machine Learning",
     },
     techStack: {
       title: "// teknologier",
-      frontend: "Frontend",
-      backend: "Backend",
-      tools: "Værktøjer",
+      languages: "Programmeringssprog",
+      frameworks: "Frameworks",
+      dataAutomation: "Data og automatisering",
     },
     projects: {
       title: "// projekter",
@@ -265,8 +277,20 @@ export const translations = {
     websites: {
       title: "// websites",
       visitSite: "Besøg side",
-      note: "Bemærk: Disse hjemmesider er i øjeblikket under udvikling og er ikke live endnu — dette er et udkast.",
+      note: "Bemærk: Nogle af disse hjemmesider er stadig under udvikling.",
       items: [
+        {
+          name: "Magpie Lane Vintage",
+          role: "Vintagebutik — designede og udviklede en responsiv hjemmeside.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://magpielanevintage.dk"
+        },
+        {
+          name: "BORIX Logistics",
+          role: "Logistikwebsite — designet og udviklet en responsiv hjemmeside.",
+          tech: ["Next.js", "Vercel", "React"],
+          link: "https://knapkova.github.io/BORIX-logistics/"
+        },
         {
           name: "Den Gul Café",
           role: "Web for café — designet og udviklet en responsiv side.",
@@ -292,12 +316,6 @@ export const translations = {
           link: "https://knapkova.github.io/onkel-a-hygge-hub"
         },
         {
-          name: "The fresh barber Aarhus",
-          role: "Web for barber — designet og udviklet en responsiv side.",
-          tech: ["Next.js", "Vercel", "React"],
-          link: "https://knapkova.github.io/the-fresh-barber-aarhus/"
-        },
-        {
           name: "Momo café Silkeborg",
           role: "Web for café — designet og udviklet en responsiv side.",
           tech: ["Next.js", "Vercel", "React"],
@@ -307,7 +325,7 @@ export const translations = {
     },
     about: {
       title: "// om_mig",
-      bio: "Jeg er en full-stack udvikler med passion for ren kode og bjergstier. Jeg bygger webapplikationer der er hurtige, tilgængelige og vedligeholdbare. Når jeg ikke koder, finder du mig på vandretur et sted i Alperne eller eksperimenterende med ny teknologi over en kop stærk kaffe.",
+      bio: "Jeg er en full-stack udvikler med passion for ren kode, bjerge og et aktivt liv. Jeg bygger webapplikationer, der er hurtige, tilgængelige og vedligeholdbare. Når jeg ikke koder, underviser jeg måske i yoga, cykler eller lærer om noget, der har fanget min interesse på det seneste.",
       terminalQuote: '> "Enhver idiot kan skrive kode som en computer kan forstå. Gode programmører skriver kode som mennesker kan forstå." — Martin Fowler',
     },
     contact: {

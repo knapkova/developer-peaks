@@ -1,7 +1,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useEffect, useState } from "react";
 
-const techItems = ["React", "Node.js", "TypeScript", "PostgreSQL", "Docker", "Go"];
+const techItems = ["Python", "C#", ".NET", "Machine Learning", "SQL", "Power Automate"];
 
 const MountainsSvg = () => (
   <svg

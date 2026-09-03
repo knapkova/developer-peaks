@@ -23,16 +23,6 @@ const Websites = () => {
                 <h3 className="font-mono text-base font-semibold text-foreground mb-1">
                   {site.name}
                 </h3>
-                <p className="text-sm text-muted-foreground font-sans mb-2">
-                  {site.role}
-                </p>
-                <div className="flex flex-wrap gap-1.5">
-                  {site.tech.map((t) => (
-                    <span key={t} className="px-2 py-0.5 text-[10px] font-mono border border-border text-muted-foreground rounded">
-                      {t}
-                    </span>
-                  ))}
-                </div>
               </div>
               <a
                 href={site.link || undefined}
